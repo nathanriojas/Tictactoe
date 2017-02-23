@@ -63,7 +63,7 @@ def checkWinner():
 			break
 		
 def twoPlayer():
-	
+
 	print("Welcome to Tic Tac Toe! Player 1 is x and Player 2 is o\nEnter positions row first (Ex: 10 == middle row, first (0) column)\nLet's Play! \n")
 	
 	for moves in range (9):
@@ -86,9 +86,8 @@ def twoPlayer():
 		if winner != "null":
 			break
 
-		
-
-
+def versusComputer():
+	print("Create this function")
 
 def main():
 	global winner
@@ -98,10 +97,17 @@ def main():
 		row = []
 		for j in range (3):
 			row.append("_____")
-		tictactoe.append(row)
+		tictactoe.append(row) 
 	
+	gamesetting = str(input("Would you like to play 2 player (Otherwise you will play against the computer)? (Y|N)")).strip(" ")
+	
+	if gamesetting == "Y" or gamesetting == "y":
+		twoPlayer()
+	elif gamesetting == "N" or gamesetting == "n":
+		versusComputer()
+	else:
+		print("invalid")
 
-		
 	checkWinner()
 	print("The winner is " + str(winner.strip("_")) + "!")
 	
