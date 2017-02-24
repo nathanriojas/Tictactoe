@@ -109,6 +109,7 @@ def main():
 		print("invalid")
 
 	checkWinner()
+	print(grid())
 	print("The winner is " + str(winner.strip("_")) + "!")
 	
 main()
