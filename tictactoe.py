@@ -87,6 +87,8 @@ def twoPlayer():
 			break
 
 def versusComputer():
+	# difficulty = str(input("Which setting would you like to play on? (Easy, Medium, Hard)"))
+	# print("Great, let's play!")
 	print("Create this function")
 
 def main():
