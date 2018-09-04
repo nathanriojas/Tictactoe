@@ -82,7 +82,7 @@ class TicTacToe(object):
 		while moveCount < 9:
 			# display the grid to show the user the board with the coordinates to enter
 			self.viewGrid()
-			print ("\nMake your move Player " + playerSymbol[player] + "! Enter the row followed by column (i.e C2)")
+			print ("\nMake your move Player " + playerSymbol[player] + "! Enter the row followed by column (i.e. C2)")
 			move = str(input())
 			if self.quitGame(move):
 				print("\nGame terminated...See Ya!")
