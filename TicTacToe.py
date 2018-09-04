@@ -68,17 +68,17 @@ class TicTacToe(object):
 	# or overlapping inputs. Enable the players to quit at any time.
 	def twoPlayer(self):
 		print("Let's play Tic Tac Toe! Type quit at any time to stop the match \n")
-		moveCount = 0
-		playerSymbol = ["X","O"]
-		# simple dictionary to map the user's input for the row to an index of the grid list
-		rowDict = {"A":0,"B":1,"C":2}
 		# determine whether player 1 wants X or O to create the move request string
 		ch = self.chooseSide()
 		if ch == 0:
 			print("\nGame terminated...See Ya!")
 			return
 		# associate players with either 0 or 1 based on their choice of X or O to update the grid throughout the game
+		playerSymbol = ["X","O"]
 		player = playerSymbol.index(ch)
+		# simple dictionary to map the user's input for the row to an index of the grid list
+		rowDict = {"A":0,"B":1,"C":2}
+		moveCount = 0
 		while moveCount < 9:
 			# display the grid to show the user the board with the coordinates to enter
 			self.viewGrid()
