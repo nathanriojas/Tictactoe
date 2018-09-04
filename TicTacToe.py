@@ -70,6 +70,7 @@ class TicTacToe(object):
 		print("Let's play Tic Tac Toe! Type quit at any time to stop the match \n")
 		moveCount = 0
 		playerSymbol = ["X","O"]
+		# simple dictionary to map the user's input for the row to an index of the grid list
 		rowDict = {"A":0,"B":1,"C":2}
 		# determine whether player 1 wants X or O to create the move request string
 		ch = self.chooseSide()
